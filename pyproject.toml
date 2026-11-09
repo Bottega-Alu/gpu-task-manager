@@ -1,0 +1,22 @@
+[project]
+name = "gpu-task-manager"
+version = "0.1.0"  # keep in sync with src/gtm_desktop/brand.py (tests check it)
+description = "Windows tray app and GUI for per-process GPU memory, engine load and LLM introspection"
+license = "LicenseRef-PolyForm-Noncommercial-1.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "nvidia-ml-py>=13.615.71",
+    "psutil>=7.2.2",
+    "pillow>=11.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+release = ["pyinstaller==6.22.3"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]

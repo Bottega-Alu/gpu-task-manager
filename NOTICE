@@ -1,0 +1,18 @@
+Required Notice: Copyright (c) 2026 Francesco Trani (https://francescotrani.com)
+Required Notice: GPU Task Manager, https://github.com/Bottega-Alu/gpu-task-manager
+
+GPU Task Manager is licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE,
+or https://polyformproject.org/licenses/noncommercial/1.0.0). Personal, hobby, study, research,
+educational and non-profit use is free. Any commercial use needs a separate licence from the
+author: https://francescotrani.com
+
+If you copy, fork or redistribute any part of this software, you must keep the licence terms
+and the "Required Notice:" lines above with it, and so credit the software and its author.
+
+Third-party code keeps its own licence:
+- src/gputaskman/ is gputaskman by Scott Hanselman, MIT licence
+  (https://github.com/shanselman/gputaskman, full text in licenses/gputaskman-LICENSE.txt).
+  It is included unmodified; the MIT licence, not the PolyForm one, applies to that folder.
+- Runtime dependencies bundled in the Windows build (Python, Tcl/Tk, Pillow, psutil,
+  nvidia-ml-py, PyInstaller bootloader) are listed with their licences in
+  THIRD-PARTY-NOTICES.txt, generated at build time.

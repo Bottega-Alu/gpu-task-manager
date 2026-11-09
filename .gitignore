@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+build/
+dist/
+installer/Output/
+.pytest_cache/
+assets/tray-preview.png
+assets/app-256.png
+# local work, investigations and outputs: never published
+.work/
+audits/
+ops/*/runs/
+*.etl
+*.log
+.claude/
