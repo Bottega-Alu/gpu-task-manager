@@ -16,9 +16,13 @@ A Windows 11 style tray app, one click away.</p>
 </p>
 
 <p align="center">
+  <a href="https://github.com/Bottega-Alu/gpu-task-manager/releases/latest"><img src="https://img.shields.io/github/v/release/Bottega-Alu/gpu-task-manager?style=for-the-badge&amp;logo=windows&amp;logoColor=white&amp;label=Download%20for%20Windows&amp;color=0078D4" alt="Download the latest Windows release" height="40"></a>
+</p>
+
+<p align="center">
   <a href="#see-the-app">Screenshots</a> ·
   <a href="#what-it-shows">Features</a> ·
-  <a href="#build-and-install">Build and install</a> ·
+  <a href="#install">Install</a> ·
   <a href="#license">License</a> ·
   <a href="#italiano">Italiano</a>
 </p>
@@ -71,9 +75,16 @@ A Windows 11 style tray app, one click away.</p>
 
 **Private by design.** No telemetry, no account, no cloud. The only network traffic is to `127.0.0.1`, to ask local model servers what they have loaded.
 
+## Install
+
+Download **`GPUTaskManager-Setup-<version>.exe`** from the [latest release](https://github.com/Bottega-Alu/gpu-task-manager/releases/latest) and run it. It installs for your user only, without admin rights, and can start with Windows. A portable `.zip` is there too.
+
+> **The installer is not code-signed yet**, so Windows SmartScreen shows *"Windows protected your PC"* the first time. Click **More info → Run anyway**. You can check the download against `SHA256SUMS.txt` in the release:
+> `Get-FileHash .\GPUTaskManager-Setup-0.1.0.exe -Algorithm SHA256`
+
 ## Build and install
 
-There is no signed release yet: build it from source on Windows. You need [uv](https://docs.astral.sh/uv/) and, for the installer, [Inno Setup 6](https://jrsoftware.org/isinfo.php).
+To build it yourself on Windows you need [uv](https://docs.astral.sh/uv/) and, for the installer, [Inno Setup 6](https://jrsoftware.org/isinfo.php).
 
 ```powershell
 winget install --id astral-sh.uv --exact
@@ -160,4 +171,4 @@ If GPU Task Manager is useful to you, leave a ⭐ and tell someone who runs loca
 
 **Licenza:** PolyForm Noncommercial 1.0.0. Gratis per uso personale e domestico, studio, ricerca, scuola e no-profit. Per l'uso commerciale serve una licenza a parte: contatta l'autore su [francescotrani.com](https://francescotrani.com). Chi copia, forka o ridistribuisce deve conservare la licenza e le righe `Required Notice:` del file [NOTICE](NOTICE), che citano il software e l'autore.
 
-Per compilare: vedi [Build and install](#build-and-install).
+**Installazione:** scarica `GPUTaskManager-Setup-<versione>.exe` dall'[ultima release](https://github.com/Bottega-Alu/gpu-task-manager/releases/latest). L'installer non è ancora firmato: al primo avvio Windows mostra "Windows ha protetto il PC", clicca **Ulteriori informazioni → Esegui comunque**. Per compilare: vedi [Build and install](#build-and-install).
